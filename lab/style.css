@@ -1,0 +1,46 @@
+header{
+    background-color: red;
+    color: white;
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+nav{
+   background-color: brown;
+   position: sticky;
+   z-index: 1; 
+
+}   
+
+.menu{
+    margin: 0%;
+}
+
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: azure;
+}
+
+#dropdown1 , #dropdown2{
+    position: absolute;
+    top: 38px;
+    background-color: palevioletred;
+    max-width: 100px;
+    padding: 0;
+    display: none;
+}
+
+nav li a:hover {
+    background-color: rgb(209, 169, 169);;
+}
+
+.menu li:nth-child(2):hover #dropdown1, .menu li:nth-child(3):hover #dropdown2{
+    display: block;
+}
